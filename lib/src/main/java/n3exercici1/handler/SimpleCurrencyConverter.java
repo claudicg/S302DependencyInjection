@@ -28,7 +28,7 @@ public class SimpleCurrencyConverter implements CurrencyConverter{
             double rate = exchangeRates.get(toCurrency);
             return amount * rate;
         } else {
-            throw new IllegalArgumentException("No se encontró la tasa de cambio para la moneda " + toCurrency);
+            throw new IllegalArgumentException("Exchange rate not found for currency " + toCurrency);
         }
 	}
 
